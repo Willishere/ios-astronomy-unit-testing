@@ -9,6 +9,11 @@
 import Foundation
 
 class MarsRoverClient {
+    let networkLoader: NetworkDataLoader?
+    
+    init(networkLoader: NetworkDataLoader = URLSession.shared) {
+        self.networkLoader = networkLoader
+    }
     
     func fetchMarsRover(named name: String,
                         using session: URLSession = URLSession.shared,

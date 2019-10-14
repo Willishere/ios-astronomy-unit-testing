@@ -23,6 +23,8 @@
 		9DBD20382140E46E0047905E /* ConcurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD20362140E46E0047905E /* ConcurrentOperation.swift */; };
 		9DBD20392140E46E0047905E /* FetchPhotoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBD20372140E46E0047905E /* FetchPhotoOperation.swift */; };
 		9DFE494C2145D37A0009922B /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFE494B2145D37A0009922B /* PhotoDetailViewController.swift */; };
+		9E022CFE235501800004EAB0 /* NetworkDataReloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E022CFD235501800004EAB0 /* NetworkDataReloader.swift */; };
+		9E022D02235509EB0004EAB0 /* URLSession+NetworkDataReloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E022D01235509EB0004EAB0 /* URLSession+NetworkDataReloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		9DBD20362140E46E0047905E /* ConcurrentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentOperation.swift; sourceTree = "<group>"; };
 		9DBD20372140E46E0047905E /* FetchPhotoOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchPhotoOperation.swift; sourceTree = "<group>"; };
 		9DFE494B2145D37A0009922B /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		9E022CFD235501800004EAB0 /* NetworkDataReloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataReloader.swift; sourceTree = "<group>"; };
+		9E022D01235509EB0004EAB0 /* URLSession+NetworkDataReloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+NetworkDataReloader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		9DBD1FFC2140D1300047905E = {
 			isa = PBXGroup;
 			children = (
+				9DBD20082140D1300047905E /* AppDelegate.swift */,
 				9DBD20072140D1300047905E /* Astronomy */,
 				9DBD20062140D1300047905E /* Products */,
 			);
@@ -76,7 +81,7 @@
 		9DBD20072140D1300047905E /* Astronomy */ = {
 			isa = PBXGroup;
 			children = (
-				9DBD20082140D1300047905E /* AppDelegate.swift */,
+				9E022D00235509D10004EAB0 /* Helpers */,
 				9DBD20272140D31B0047905E /* Model */,
 				9DBD20282140D31F0047905E /* Views */,
 				9DBD20262140D3130047905E /* View Controllers */,
@@ -151,6 +156,15 @@
 				9DBD20142140D1300047905E /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E022D00235509D10004EAB0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9E022CFD235501800004EAB0 /* NetworkDataReloader.swift */,
+				9E022D01235509EB0004EAB0 /* URLSession+NetworkDataReloader.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +248,9 @@
 				9DBD20252140D30F0047905E /* MarsRover.swift in Sources */,
 				9DBD202A2140D35B0047905E /* MarsRoverClient.swift in Sources */,
 				9DBD20232140D30F0047905E /* SolDescription.swift in Sources */,
+				9E022CFE235501800004EAB0 /* NetworkDataReloader.swift in Sources */,
 				9DBD20092140D1300047905E /* AppDelegate.swift in Sources */,
+				9E022D02235509EB0004EAB0 /* URLSession+NetworkDataReloader.swift in Sources */,
 				9DBD20242140D30F0047905E /* MarsPhoto.swift in Sources */,
 				9DBD202F2140D7720047905E /* Camera.swift in Sources */,
 			);
